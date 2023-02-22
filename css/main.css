@@ -94,6 +94,10 @@ body {
   font-size: 1.6rem;
 }
 
+.white-section {
+  background-color: #fff;
+}
+
 .burger-btn {
   position: fixed;
   top: 20px;
@@ -104,6 +108,7 @@ body {
   border: 1px solid transparent;
   cursor: pointer;
   z-index: 1000;
+  mix-blend-mode: difference;
 }
 .burger-btn:focus {
   outline: none;

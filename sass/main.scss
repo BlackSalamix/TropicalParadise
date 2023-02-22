@@ -20,6 +20,10 @@ body {
 	font-size: 1.6rem;
 }
 
+.white-section{
+	background-color: $pure-white;
+}
+
 // **********************************
 // NAVIGATION
 // **********************************
@@ -34,6 +38,7 @@ body {
 	border: 1px solid transparent;
 	cursor: pointer;
 	z-index: 1000;
+	mix-blend-mode: difference;
 
 	&:focus {
 		outline: none;
