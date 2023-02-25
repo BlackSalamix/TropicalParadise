@@ -4,6 +4,13 @@ const allNavItems = document.querySelectorAll(".nav__item");
 const navBtnBars = document.querySelector(".burger-btn__bars");
 const allSections = document.querySelectorAll(".section");
 const footerYear = document.querySelector(".footer__year");
+const inslandsCard = document.querySelectorAll(".islands__card");
+
+inslandsCard.forEach((card) => {
+	card.addEventListener("click", () => {
+		card.classList.toggle("islands__card-flipped");
+	});
+});
 
 const handleNav = () => {
 	nav.classList.toggle("nav--active");

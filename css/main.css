@@ -282,14 +282,6 @@ body {
   text-align: center;
   perspective: 1000px;
 }
-.islands__card:hover .islands__card-img {
-  transform: rotateY(-180deg);
-  opacity: 0;
-}
-.islands__card:hover .islands__card-info {
-  transform: rotateY(0);
-  opacity: 1;
-}
 .islands__card-img {
   padding: 2em;
   height: 100%;
@@ -371,6 +363,26 @@ body {
   background-color: #0fe29c;
 }
 
+@media (hover: hover) {
+  .islands__card:hover .islands__card-img {
+    transform: rotateY(-180deg);
+    opacity: 0;
+  }
+  .islands__card:hover .islands__card-info {
+    transform: rotateY(0);
+    opacity: 1;
+  }
+}
+@media (hover: none) {
+  .islands__card-flipped .islands__card-img {
+    transform: rotateY(-180deg);
+    opacity: 0;
+  }
+  .islands__card-flipped .islands__card-info {
+    transform: rotateY(0);
+    opacity: 1;
+  }
+}
 .offers {
   position: relative;
   background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../img/maldives-poor.jpg");

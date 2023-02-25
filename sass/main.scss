@@ -234,17 +234,17 @@ body {
 		color: $pure-white;
 		text-align: center;
 		perspective: 1000px;
-
-		&:hover {
-			.islands__card-img {
-				transform: rotateY(-180deg);
-				opacity: 0;
-			}
-			.islands__card-info {
-				transform: rotateY(0);
-				opacity: 1;
-			}
-		}
+		
+		// .islands__card-img-return {
+		// 	transform: rotateY(-180deg);
+		// 	opacity: 0;
+		// }
+		// .islands__card-info-return {
+		// 	transform: rotateY(0);
+		// 	opacity: 1;
+		// }
+		
+		
 		&-img {
 			padding: 2em;
 			height: 100%;
@@ -329,6 +329,31 @@ body {
 					background-color: $green-color-hover;
 				}
 			}
+		}
+	}
+}
+
+@media(hover: hover){
+	.islands__card:hover {
+		.islands__card-img {
+			transform: rotateY(-180deg);
+			opacity: 0;
+		}
+		.islands__card-info {
+			transform: rotateY(0);
+			opacity: 1;
+		}
+	}
+}
+@media(hover: none){
+	.islands__card-flipped {
+		.islands__card-img {
+			transform: rotateY(-180deg);
+			opacity: 0;
+		}
+		.islands__card-info {
+			transform: rotateY(0);
+			opacity: 1;
 		}
 	}
 }
